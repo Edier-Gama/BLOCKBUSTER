@@ -1,0 +1,19 @@
+{
+    "name": "blockbuster",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.html",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/Edier-Gama/blockbuster.git"
+    },
+    "author": "@edier_gama",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/Edier-Gama/blockbuster/issues"
+    },
+    "homepage": "https://github.com/Edier-Gama/blockbuster#readme"
+  }
