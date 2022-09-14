@@ -1,6 +1,12 @@
+const api = axios.create({
+   baseURL: 'https://api.themoviedb.org/3/',
+   params: {
+      'api_key': APIKEY
+   }
+})
+
 async function getTrendingMoviesPreview() {
-   const res = await fetch(`https://api.themoviedb.org/3/trending/movie/week?api_key=${APIKEY}`)
-   const data = await res.json()
+   const {data} = await api('trending/movie/week')
    const movies = data.results
 
    movies.forEach(movie => {
@@ -19,10 +25,8 @@ async function getTrendingMoviesPreview() {
 }
 
 async function getCategoriesPreview() {
-   const res = await fetch(`https://api.themoviedb.org/3/genre/movie/list?api_key=${APIKEY}`)
-   const data = await res.json()
+   const {data} = await api('genre/movie/list')
    const categories = data.genres
-   console.log(categories);
 
    categories.forEach(categorie => {
       const categoriesSection = document.querySelector('.categoriesPreview-container')
