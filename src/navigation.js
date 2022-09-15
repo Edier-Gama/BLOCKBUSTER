@@ -16,6 +16,7 @@ trendingBtn.addEventListener('click', () => {
 
 
 function navigation() {
+    
     if(location.hash.startsWith('#trends')){
         trendsPage()
     } else if(location.hash.startsWith('#search=')) {
@@ -24,9 +25,12 @@ function navigation() {
         movieDetailsPage()
     } else if (location.hash.startsWith('#category=')){
         categoriesPage()   
-    } else if (location.hash.startsWith('#home')){
+    } else{
+        location.hash = '#home'
         homePage()
     }
+    document.body.scrollTop = 0
+    document.documentElement.scrollTop = 0
 }
 
 function homePage() {
@@ -94,6 +98,7 @@ function categoriesPage() {
     const [_, categoryData] = location.hash.split('=')
     const [categorieId, categorieName] = categoryData.split('-')
     headerCategoryTitle.innerHTML = categorieName
+
     getMovieByCategorie(categorieId)
 }
 function searchPage() {

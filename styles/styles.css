@@ -29,7 +29,8 @@
 }
 
 html {
-  background-color: var(--backgroundBG);
+   background-color: #3E0F64;
+   background-color: var(--backgroundBG);
 }
 
 body {
