@@ -277,6 +277,10 @@ button {
 
 
 /* Movie Detail */
+.categories-list h3 {
+ color: black;
+}
+
 .movieDetail-container {
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
@@ -288,6 +292,7 @@ button {
 }
 
 .movieDetail-title {
+  color: black;
   display: inline-block;
   width: 80%;
   margin: 0 0 16px 0;
@@ -345,9 +350,7 @@ button {
 
 /* Footer */
 footer {
-  position: relative;
   background-color: var(--green);
-  top: 130px;
   color: black;
   font-weight: bold;
   text-align: center;
