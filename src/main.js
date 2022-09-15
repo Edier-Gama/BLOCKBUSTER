@@ -6,6 +6,11 @@ function createMovies(movies, container) {
       movies.innerText = ''
       const trendingMoviesDiv = document.createElement('div')
       trendingMoviesDiv.classList.add('movie-container')
+
+      trendingMoviesDiv.addEventListener('click', () => {
+         location.hash = '#movie=' + movie.id
+      })
+
       const trendingMoviesImg = document.createElement('img')
       trendingMoviesImg.classList.add('movie-img')
       trendingMoviesImg.setAttribute('alt', movie.title)
@@ -59,4 +64,32 @@ async function getMovieByCategorie(id) {
    const movies = data.results
 
    createMovies(movies, genericSection)
+}
+
+async function searchMovie(query){
+   const res = await fetch(`https://api.themoviedb.org/3/search/movie?api_key=${APIKEY}&query=${query}`)
+   const data = await res.json()
+   const movies = data.results
+
+   createMovies(movies, genericSection)
+}
+async function getTrendingMovies() {
+   const res = await fetch(`https://api.themoviedb.org/3/trending/movie/week?api_key=${APIKEY}`)
+   const data = await res.json()
+   const movies = data.results
+   createMovies(movies, genericSection)
+}
+
+async function getMovieById(id) {
+   const res = await fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${APIKEY}`)
+   const data = await res.json()
+
+
+   // headerSection.setAttribute('src', data.poster_path)
+   movieDetailTitle.textContent = data.original_title
+   movieDetailDescription.textContent = data.overview
+   movieDetailScore.textContent = data.vote_average
+   console.log(data.genres);
+   createCategories(data.genres, movieDetailCategoriesList)
+
 }

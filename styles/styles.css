@@ -282,6 +282,10 @@ button {
  color: black;
 }
 
+.category-title {
+  color: rgb(255, 255, 255);
+}
+
 .movieDetail-container {
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
@@ -322,6 +326,7 @@ button {
 }
 
 .relatedMovies-title {
+  color: black;
   margin-bottom: 16px;
 }
 
