@@ -1,3 +1,5 @@
+const APIKEY = '21f822852ba5dced7872096c73b52c4a'
+
 function createMovies(movies, container) {
 
    container.innerHTML = ''
