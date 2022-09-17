@@ -1,5 +1,3 @@
-
-
 function createMovies(movies, container) {
 
    container.innerHTML = ''
