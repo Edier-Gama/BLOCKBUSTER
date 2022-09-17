@@ -74,7 +74,7 @@ async function searchMovie(query){
    createMovies(movies, genericSection)
 }
 async function getTrendingMovies() {
-   const res = await fetch(`https://api.themoviedb.org/3/trending/movie/week?api_key=${APIKEY}`)
+   const res = await fetch(`https://api.themoviedb.org/3/trending/movie/week?api_key=21f822852ba5dced7872096c73b52c4a`)
    const data = await res.json()
    const movies = data.results
    createMovies(movies, genericSection)
