@@ -23,6 +23,6 @@ This SPA is a recreating of a tipical blockbuster but ONLINE, I consume a public
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details
 
 * Made with 💚 at Platzi
