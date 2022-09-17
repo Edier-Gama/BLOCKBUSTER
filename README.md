@@ -1,7 +1,8 @@
 # Welcome to BlockBuster 2.0
 
-**This SPA is a recreating of a tipical blockbuster but ONLINE, I consume a public API REST called
-(themovieDB) and using HTTP methods I create a page where you can watch details of any movie**
+**BlockBuster 2.0 is SPA that recreate a tipical blockbuster but ONLINE, consuming a public API REST called (themovieDB) and using HTTP methods I create a page where you can watch details of any movie, but not only that.
+
+You can also search an specific movie, view categories and trending movies**
 
 ## Deployment
 
