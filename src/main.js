@@ -84,12 +84,31 @@ async function getMovieById(id) {
    const res = await fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${APIKEY}`)
    const data = await res.json()
 
-
-   // headerSection.setAttribute('src', data.poster_path)
+   const movieImgUrl = 'https://image.tmdb.org/t/p/w500' + data.poster_path
+   headerSection.style.background = `
+   linear-gradient(
+      180deg, 
+      rgba(0, 0, 0, 0.35) 19.27%, 
+      rgba(0, 0, 0, 0) 29.17%
+      ),
+   url(${movieImgUrl})
+   
+   `
+   
    movieDetailTitle.textContent = data.original_title
    movieDetailDescription.textContent = data.overview
    movieDetailScore.textContent = data.vote_average
    console.log(data.genres);
    createCategories(data.genres, movieDetailCategoriesList)
+   getRelatedMoviesById(id)
 
+}
+
+async function getRelatedMoviesById(id) {
+   const res = await fetch(`https://api.themoviedb.org/3/movie/${id}/similar?api_key=${APIKEY}`)
+   const data = await res.json()
+
+   movies = data.results
+
+   createMovies(movies, relatedMoviesContainer)
 }

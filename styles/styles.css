@@ -282,8 +282,15 @@ button {
  color: black;
 }
 
+.category-container {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  background-color: white;
+}
+
 .category-title {
-  color: rgb(255, 255, 255);
+  color: rgb(12, 9, 9);
 }
 
 .movieDetail-container {
@@ -317,7 +324,9 @@ button {
 }
 
 .movieDetail-description {
+  font-size: 20px;
   margin: 0 0 24px 0;
+  
 }
 
 .relatedMovies-container {
