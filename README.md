@@ -1,4 +1,4 @@
-# Wlcome to BlockBuster 2.0
+# Welcome to BlockBuster 2.0
 
 This SPA is a recreating of a tipical blockbuster but ONLINE, I consume a public API REST called
 (themovieDB) and using HTTP methods I create a ...
@@ -9,7 +9,8 @@ This SPA is a recreating of a tipical blockbuster but ONLINE, I consume a public
 
 # Preview
 
-![127 0 0 1_5500_index html (1)](https://user-images.githubusercontent.com/96151177/190837445-615e300c-38a7-4ba1-a95a-31f2b074838f.png)
+![127 0 0 1_5500_index html (1)](https://user-images.githubusercontent.com/96151177/190837567-acb414d8-bc6f-491d-9d1c-734b7cf8f8cc.jpg)
+
 
 ![127 0 0 1_5500_index html_](https://user-images.githubusercontent.com/96151177/190837458-94d93692-1405-401e-af79-76505a9b8a81.png)
 
