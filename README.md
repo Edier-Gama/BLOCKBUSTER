@@ -13,8 +13,10 @@
 ```
 
 # Preview
+![home2 0](https://user-images.githubusercontent.com/96151177/202488660-0530ff8f-3658-4c3b-8cf3-ee3a52b8dae7.PNG)
+![127 0 0 1_5500_index html (1)](https://user-images.githubusercontent.com/96151177/190837567-acb414d8-bc6f-491d-9d1c-734b7cf8f8cc.jpg)!
+![edier-gama github io_blockbuster_(iPhone SE)](https://user-images.githubusercontent.com/96151177/202489372-a6ae54bb-c0a5-430a-838d-5d0a364c9aab.png)
 
-![127 0 0 1_5500_index html (1)](https://user-images.githubusercontent.com/96151177/190837567-acb414d8-bc6f-491d-9d1c-734b7cf8f8cc.jpg)![127 0 0 1_5500_index html_](https://user-images.githubusercontent.com/96151177/190837589-6f0bc61b-7799-4724-afac-109b573b2dca.jpg)
 
 
 ## Built With
