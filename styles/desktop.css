@@ -1,0 +1,17 @@
+
+.genericList-container .movie-img {
+    width: 200px;
+  }
+.genericList-container {
+    overflow-x:scroll;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    justify-content: space-between;
+}
+
+/* .header-container{
+    display: none; */
+
+
