@@ -22,12 +22,6 @@
 ![edier-gama github io_blockbuster_(Nest Hub Max)](https://user-images.githubusercontent.com/96151177/205454388-d64f2cf3-792a-4c9d-8fb1-ccd5f0915751.png)
 
 
-
-## Built With
-
-* [HTML] [CSS] [JAVASCRIPT] 
-* [API] (https://www.themoviedb.org/documentation/api) - Oficial API
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
