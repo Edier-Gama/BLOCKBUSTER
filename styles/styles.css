@@ -1,8 +1,31 @@
 /* General */
 * { box-sizing: border-box; }
 
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+    width: 12px;               
+  }
+  
+body::-webkit-scrollbar-track {
+    background-image: radial-gradient(circle at 100% 0%, #f3ffff 0, #f2ffff 12.5%, #f1ffff 25%, #f0f8f7 37.5%, #eeeeee 50%, #ebe4e6 62.5%, #e8dbe0 75%, #e4d2dc 87.5%, #dfcbd9 100%);
+  }
+  
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(126, 126, 126);  
+    border-radius: 20px;       
+    border: 3px solid white; 
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(90, 90, 90);  
+}
+
+
 :root {
-  --backgroundBG: #121f3d;
+  --backgroundBG: radial-gradient(circle at 12.5% 12.5%, #ffffff 0, #ffffff 10%, #ffffff 20%, #ffffff 30%, #ffffff 40%, #fffbf6 50%, #faefe4 60%, #f6e3d5 70%, #f3d9c7 80%, #f1cebc 90%, #efc5b4 100%);
   --purple-light-1: #FBFAFB;
   --purple-light-2: #EEEAF2;
   --purple-medium-1: #AA83C8;
@@ -20,8 +43,8 @@
   --red: #F09D9D;
   --green: rgb(34, 255, 71);
 
-  --font-family-titles: 'Dosis', sans-serif;
-  --font-family-text: 'Red Hat Display', sans-serif;
+  --font-family-titles: 'Ubuntu', sans-serif;
+  --font-family-text: 'Quicksand', sans-serif;
   --font-weight-title1: 800;
   --font-weight-title2: 700;
   --font-weight-text1: 400;
@@ -30,11 +53,11 @@
 
 html {
    background-color: #3E0F64;
-   background-color: var(--backgroundBG);
+   background-image: var(--backgroundBG);
 }
 
 body {
-  background-color: var(--backgroundBG);
+  background-image: var(--backgroundBG);
   color: black;
   font-family: var(--font-family-text);
   font-weight: var(--font-weight-text1);
@@ -50,7 +73,7 @@ h1, h2, h3 {
 
 h1, h2 {
   font-size: 27px;
-  color: var(--white);
+  color: black;
   font-family: var(--font-family-titles);
   font-weight: var(--font-weight-title1);
   margin: 0;
@@ -59,12 +82,13 @@ h1, h2 {
 
 h2 {
   font-size: 20px;
-  color: var(--white);
+  color: black;
+  font-family: var(--font-family-text);
   font-weight: var(--font-weight-title2);
 }
 
 h3 {
-  color: var(--white);
+  color: black;
   font-weight: var(--font-weight-text2);
   font-size: 20px;
 }
@@ -72,7 +96,8 @@ h3 {
 input {
   background-color: var(--white);
   color: black;
-  border: none;
+  border: 2px solid rgb(60, 60, 60);
+  /* border-radius: 15px; */
   font-size: 18px;
   padding-left: 16px;
 }
@@ -83,10 +108,12 @@ input::placeholder {
 }
 
 button {
+  position: relative;
+  left: 5px;
   background-color: var(--white);
-  border: none;
+  border: 2px solid rgb(79, 79, 79);
   color: black;
-  font-weight: var(--font-weight-text2);
+  font-weight: var(--font-weight-text);
   font-size: 14px;
   cursor: pointer;
 }
@@ -151,7 +178,10 @@ button {
   display: inline-block;
 }
 .header-arrow--white {
-  color: var(--purple-light-1);
+  position: relative;
+  top: -40px;
+  color: rgb(0, 0, 0);
+  z-index: 1;
 }
 
 .header-searchForm {
@@ -257,12 +287,21 @@ button {
 
 
 /* Generic List (search, trending & category) */
-.genericList-container {
+/* .genericList-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 32px 24px;
+} */
+
+.genericList-container {
+  overflow-x:scroll;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap:nowrap;
+  justify-content: space-between;
 }
 
 .genericList-container .movie-container {
@@ -271,7 +310,8 @@ button {
 }
 
 .genericList-container .movie-img {
-  width: 100%;
+  margin-left: 10px;
+  width: 110px;
 }
 
 
@@ -284,7 +324,6 @@ button {
   padding: 10px;
   margin: 5px;
   border-radius: 10px;
-  background-color: white;
 }
 
 .category-title {
@@ -295,8 +334,7 @@ button {
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
   padding: 32px 24px;
-  margin-top: 403px;
-  z-index: 1;
+  margin-top: 200px;
   position: absolute;
   background-color: var(--purple-light-1);
 }
@@ -332,6 +370,8 @@ button {
   height: 216px;
 }
 
+
+
 .relatedMovies-title {
   color: black;
   margin-bottom: 16px;
@@ -348,7 +388,7 @@ button {
 
 .relatedMovies-scrollContainer .movie-container {
   display: inline-block;
-  margin-right: 8px;
+  /* margin-right: 8px; */
 }
 
 .relatedMovies-scrollContainer .movie-img {
@@ -356,6 +396,7 @@ button {
   min-width: 125px;
   max-width: 125px;
   height: 187.5px;
+  margin: 5px;
   min-height: 187.5px;
   max-height: 187.5px;
 }
@@ -364,10 +405,11 @@ button {
 /* Footer */
 footer {
   background-color: var(--green);
+  width: 100%;
   color: black;
   font-weight: bold;
   text-align: center;
-  height: 48px;
+  height: 55px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -380,17 +422,3 @@ footer {
 }
 
 
-@media (min-width: 800px) {
-  .genericList-container .movie-img {
-    width: 200px;
-  }
-  .genericList-container {
-    overflow-x:scroll;
-    overflow-y: hidden;
-    display: flex;
-    flex-direction: row;
-    flex-wrap:nowrap;
-    justify-content: space-between;
-}
-
-}

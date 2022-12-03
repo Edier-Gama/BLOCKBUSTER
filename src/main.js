@@ -88,8 +88,8 @@ async function getMovieById(id) {
    headerSection.style.background = `
    linear-gradient(
       180deg, 
-      rgba(0, 0, 0, 0.35) 19.27%, 
-      rgba(0, 0, 0, 0) 29.17%
+      rgba(255, 255, 255, 0.625);
+      rgba(255, 255, 255, 0.625);
       ),
    url(${movieImgUrl})
    
