@@ -12,8 +12,14 @@
 [API] (https://www.themoviedb.org/documentation/api) - Oficial API
 ```
 
+## Built With
+
+* [HTML] [CSS] [JAVASCRIPT] 
+* [API] (https://www.themoviedb.org/documentation/api) - Oficial API
+
+
 # Preview
-![home2 0](https://user-images.githubusercontent.com/96151177/202488660-0530ff8f-3658-4c3b-8cf3-ee3a52b8dae7.PNG)
+![edier-gama github io_blockbuster_(Nest Hub Max)](https://user-images.githubusercontent.com/96151177/205454388-d64f2cf3-792a-4c9d-8fb1-ccd5f0915751.png)
 
 
 
