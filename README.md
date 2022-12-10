@@ -6,7 +6,7 @@
 
 ## Deployment
 
-* [Github Pages] (https://edier-gama.github.io/blockbuster/#home) - Oficial Web
+* [Github Pages] (https://edier-gama.github.io/BLOCKBUSTER/#home) - Oficial Web
 
 ```
 [API] (https://www.themoviedb.org/documentation/api) - Oficial API
